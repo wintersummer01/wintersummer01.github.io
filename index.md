@@ -1,6 +1,6 @@
 ---
 layout: page
-# title: Home
+title: Dongha Choi
 permalink: /
 ---
 
@@ -54,13 +54,12 @@ permalink: /
 .nowrap { white-space: nowrap; }
 </style>
 
-<!-- HEADER -->
+<!-- HEADER 
 <div style="text-align:center; margin-bottom: 1.2rem;">
   <h1 style="margin:0;">Dongha Choi</h1>
-  <!--
   <div>School of Integrated Technology, Yonsei University</div>
-  <a href="mailto:elijah1030@yonsei.ac.kr">elijah1030@yonsei.ac.kr</a>-->
-</div>
+  <a href="mailto:elijah1030@yonsei.ac.kr">elijah1030@yonsei.ac.kr</a>
+</div> -->
 
 <div class="cv-section-title">Summary</div>
 <p>
