@@ -174,8 +174,8 @@ in Proceedings of Symposium of the Korean Institute of communications and Inform
 </div>
 
 <!-- 예시: 포스트 한 개로 연결 버튼 -->
-<p style="margin-top:2rem;">
+<!-- <p style="margin-top:2rem;">
   <a class="btn" href='{{ "/2025/10/30/bridging-neural-networks-and-wireless-systems-with-mimo-ofdm-semantic-communications/" | relative_url }}'>
     Read: Bridging Neural Networks and Wireless Systems with MIMO-OFDM Semantic Communications
   </a>
-</p>
+</p> -->
