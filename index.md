@@ -63,12 +63,10 @@ permalink: /
 
 <div class="cv-section-title">Summary</div>
 <p>
-I am a Ph.D. student researching for <strong>AI-based communications</strong> and
-<strong>information theory for deep learning</strong> at the Intelligence Networking Lab., Yonsei University, Korea.
-Before joining the lab, I earned a B.E. from the School of Integrated Technology at Yonsei University with early graduation.
-My research interest includes semantic communications, learned image compression, and neural network architectures.
-I have served as a teaching assistant over two years and have three years of student council experience including the president of School of Integrated Technology and the chief executive committee member of College of Engineering.
-I also love to solve problems from various fields including social issues and medical challenges, via designing technological solutions.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am a Ph.D. student researching for <strong>AI-based communications</strong> and
+<strong>information theory for deep learning</strong> at the Intelligence Networking Lab., Yonsei University, Korea. Before joining the lab, I earned a B.E. from the School of Integrated Technology at Yonsei University with early graduation. My research interest includes <strong>semantic communications</strong>, <strong>learned image compression</strong>, and <strong>neural network architectures</strong>.
+<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I have served as a teaching assistant over two years and have three years of student council experience including the president of School of Integrated Technology and the chief executive committee member of College of Engineering. I also love to solve problems from various fields including social issues and medical challenges, via designing technological solutions.
 </p>
 
 <div class="cv-section-title">Education</div>
@@ -94,11 +92,11 @@ I also love to solve problems from various fields including social issues and me
 
 <div class="cv-section-title">Publications</div>
 <ol>
-  <li>H. Yoo, <strong>D. Choi</strong>, Y. Kim, Y. Kim, S. Kim, and C.-B. Chae, "Bridging neural networks and wireless systems with MIMO-OFDM semantic communications." IEEE Wireless Communications 32.5 (2025): 48-55.</li>
-  <li>H. Yoo, <strong>D. Choi</strong>, S. Kim, and C.-B. Chae, “Symbol Distributions in Semantic Communications:
-A Mutual Information–Codelength Trade-off,” <em>To be submitted</em>.</li>
-  <li><strong>D. Choi</strong>, and C.-B. Chae, “A Study on the Transformer-based Equalizer in Semantic Communication Systems,”
-in Proceedings of Symposium of the Korean Institute of communications and Information Sciences, 2024, pp. 962–963.</li>
+  <li><strong>D. Choi</strong>, H. Yoo, and C.-B. Chae, "Steganography Semantic Communications: Architectures and Prototype Validation," <em>to be submitted</em>.</li>
+  <li><strong>D. Choi</strong>, and C.-B. Chae, “A Study on the Transformer-based Equalizer in Semantic Communication Systems,” in Proceedings of Symposium of the Korean Institute of communications and Information Sciences, 2024, pp. 962–963.</li>
+  <li>H. Yoo, <strong>D. Choi</strong>, Y. Kim, Y. Kim, S. Kim, and C.-B. Chae, "Bridging neural networks and wireless systems with MIMO-OFDM semantic communications," IEEE Wireless Communications 32.5 (2025): 48-55.</li>
+  <li>H. Yoo, <strong>D. Choi</strong>, S. Kim, and C.-B. Chae, “Symbol Distributions in Semantic Communications: A Mutual Information–Codelength Trade-off,” submitted to <em>IEEE Trans. on Wireless Communications</em>.</li>
+  <li>H. Yoo, <strong>D. Choi</strong>, S. Kim, and C.-B. Chae, “Back to the Bits: Parametric Symbol Compression for Semantic O-RAN Fronthaul,” <em>to be submitted</em>.</li>
 </ol>
 
 <div class="cv-section-title">System Demonstrations</div>
@@ -106,17 +104,21 @@ in Proceedings of Symposium of the Korean Institute of communications and Inform
   <div class="cv-when">May 2025</div>
   <div class="cv-item">
     Exhibitor, <span class="cv-org">IEEE 6G Summit Dresden 2025</span><br>
-    <span class="cv-note">Demonstrated Real-Time Semantic Communications with Transparent AR Glasses.</span>
+    <span class="cv-note">Demonstrated “Wireless 6G systems: Real-Time Semantic Communications with Transparent AR Glasses”.
+    <a href="https://www.hani.co.kr/arti/economy/biznews/1198965.html"
+        target='_blank'>
+        NEWS
+    </a></span>
   </div>
   <div class="cv-when">Jun. 2025</div>
   <div class="cv-item">
     Exhibitor, <span class="cv-org">IEEE IMS 2025</span><br>
-    <span class="cv-note">Demonstrated Real-time video semantic communications with Python-based SDR.</span>
+    <span class="cv-note">Demonstrated “Real-time video semantic communications with Python-based SDR”.</span>
   </div>
   <div class="cv-when">Dec. 2025</div>
   <div class="cv-item">
     Exhibitor, <span class="cv-org">IEEE GLOBECOM 2025</span><br>
-    <span class="cv-note">To be demonstrated Semantic communications with steganography.</span>
+    <span class="cv-note">To be demonstrated “Secure Semantic communications via steganography”.</span>
   </div>
 </div>
 
@@ -170,6 +172,25 @@ in Proceedings of Symposium of the Korean Institute of communications and Inform
   <div class="cv-item">
     <span class="cv-org">EKG meets AI: Predicting H<sub>2</sub>FPEF using deep learning</span><br>
     <span class="cv-note">With 2022 Integrated Medical Science Research Program, Severance, Yonsei University</span>
+  </div>
+</div>
+
+
+<div class="cv-section-title">Skills</div>
+<div class="cv-grid">
+  <div class="cv-when"><strong>Languages</strong></div>
+  <div class="cv-item">
+    Korean (Native), English (Fluent), Chinese (Intermediate, HSK IV 280)
+  </div>
+
+  <div class="cv-when"><strong>Foundational<br>Expertise in EECS</strong></div>
+  <div class="cv-item">
+    Communications Theory, Information Theory, Machine Learning (Deep Learning and Reinforcement Learning), Data Management, Digital System Design, and Computer System Programing
+  </div>
+
+  <div class="cv-when"><strong>Programming</strong></div>
+  <div class="cv-item">
+    Python, Tensorflow, PyTorch, Matlab, C (Fluent),<br>Javascript, HTML (Intermediate)
   </div>
 </div>
 

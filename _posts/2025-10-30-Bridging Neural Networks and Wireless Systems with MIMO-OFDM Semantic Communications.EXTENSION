@@ -1,11 +1,4 @@
-
-title: TITLE
-date: YYYY-MM-DD HH:MM:SS +/-TTTT
-categories: [TOP_CATEGORY, SUB_CATEGORY]
-tags: [TAG]     # TAG names should always be lowercase
-
-
-categories: [Animal, Insect]
-tags: [bee]
-
-description: Short summary of the post.
+<a href="https://ieeexplore.ieee.org/abstract/document/11175613/"
+    target='_blank'>
+    https://ieeexplore.ieee.org/abstract/document/11175613/
+</a>
