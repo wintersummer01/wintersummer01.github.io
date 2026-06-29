@@ -69,6 +69,16 @@ permalink: /
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I have served as a teaching assistant over two years and have three years of student council experience including the president of School of Integrated Technology and the chief executive committee member of College of Engineering. I also love to solve problems from various fields including social issues and medical challenges, via designing technological solutions.
 </p>
 
+<div class="cv-section-title">Publications</div>
+<ol>
+  <li><strong>D. Choi</strong>, H. Yoo, K. Lee, D. Kim, and C.-B. Chae, "Explainable Semantic Communications: Neural Encoder Interpretation and Prototype Validation," submitted to <em>IEEE Communications Magazine</em>.</li>
+  <li>H. Yoo, <strong>D. Choi</strong>, S. Kim, and C.-B. Chae, “Back to the Bits: Parametric Symbol Compression for Semantic O-RAN Fronthaul,” <em>to be submitted</em>.</li>
+  <li><strong>D. Choi</strong>, H. Yoo, and C.-B. Chae, "Steganography Semantic Communications: Architectures and Prototype Validation," <em>to be submitted</em>.</li>
+  <li>H. Yoo, <strong>D. Choi</strong>, S. Kim, and C.-B. Chae, “Symbol Distributions in Semantic Communications: A Mutual Information–Codelength Trade-off,” to appear in <em>IEEE Trans. on Wireless Communications</em>.</li>
+  <li>H. Yoo, <strong>D. Choi</strong>, Y. Kim, Y. Kim, S. Kim, and C.-B. Chae, "Bridging neural networks and wireless systems with MIMO-OFDM semantic communications," IEEE Wireless Communications 32.5 (2025): 48-55.</li>
+  <li><strong>D. Choi</strong>, and C.-B. Chae, “A Study on the Transformer-based Equalizer in Semantic Communication Systems,” in Proceedings of Symposium of the Korean Institute of communications and Information Sciences, 2024, pp. 962–963.</li>
+</ol>
+
 <div class="cv-section-title">Education</div>
 <div class="cv-grid">
   <div class="cv-when nowrap">2023&nbsp;&mdash;&nbsp;Present</div>
@@ -90,44 +100,45 @@ permalink: /
   </div>
 </div>
 
-<div class="cv-section-title">Publications</div>
-<ol>
-  <li><strong>D. Choi</strong>, H. Yoo, and C.-B. Chae, "Steganography Semantic Communications: Architectures and Prototype Validation," <em>to be submitted</em>.</li>
-  <li><strong>D. Choi</strong>, and C.-B. Chae, “A Study on the Transformer-based Equalizer in Semantic Communication Systems,” in Proceedings of Symposium of the Korean Institute of communications and Information Sciences, 2024, pp. 962–963.</li>
-  <li>H. Yoo, <strong>D. Choi</strong>, Y. Kim, Y. Kim, S. Kim, and C.-B. Chae, "Bridging neural networks and wireless systems with MIMO-OFDM semantic communications," IEEE Wireless Communications 32.5 (2025): 48-55.</li>
-  <li>H. Yoo, <strong>D. Choi</strong>, S. Kim, and C.-B. Chae, “Symbol Distributions in Semantic Communications: A Mutual Information–Codelength Trade-off,” submitted to <em>IEEE Trans. on Wireless Communications</em>.</li>
-  <li>H. Yoo, <strong>D. Choi</strong>, S. Kim, and C.-B. Chae, “Back to the Bits: Parametric Symbol Compression for Semantic O-RAN Fronthaul,” <em>to be submitted</em>.</li>
-</ol>
-
 <div class="cv-section-title">System Demonstrations</div>
 <div class="cv-grid">
-  <div class="cv-when">May 2025</div>
+  <div class="cv-when">Dec 2025</div>
   <div class="cv-item">
-    Exhibitor, <span class="cv-org">IEEE 6G Summit Dresden 2025</span><br>
-    <span class="cv-note">Demonstrated “Wireless 6G systems: Real-Time Semantic Communications with Transparent AR Glasses”.
-    <a href="https://www.hani.co.kr/arti/economy/biznews/1198965.html"
+    Exhibitor, <span class="cv-org">IEEE GLOBECOM 2025 (Taipei, Taiwan)</span><br>
+    <span class="cv-note">Demonstrated “Secure Semantic Communications via Steganography”.
+    <a href="https://www.aitimes.kr/news/articleView.html?idxno=37696"
         target='_blank'>
         NEWS
     </a></span>
   </div>
   <div class="cv-when">Jun. 2025</div>
   <div class="cv-item">
-    Exhibitor, <span class="cv-org">IEEE IMS 2025</span><br>
+    Exhibitor, <span class="cv-org">IEEE IMS 2025 (San Francisco, USA)</span><br>
     <span class="cv-note">Demonstrated “Real-time video semantic communications with Python-based SDR”.</span>
   </div>
-  <div class="cv-when">Dec. 2025</div>
+  <div class="cv-when">May 2025</div>
   <div class="cv-item">
-    Exhibitor, <span class="cv-org">IEEE GLOBECOM 2025</span><br>
-    <span class="cv-note">To be demonstrated “Secure Semantic communications via steganography”.</span>
+    Exhibitor, <span class="cv-org">IEEE 6G Summit Dresden 2025 (Dresden, Germany)</span><br>
+    <span class="cv-note">Demonstrated “Wireless 6G systems: Real-Time Semantic Communications with Transparent AR Glasses”.
+    <a href="https://www.hani.co.kr/arti/economy/biznews/1198965.html"
+        target='_blank'>
+        NEWS
+    </a></span>
   </div>
 </div>
 
 <div class="cv-section-title">Awards and Honors</div>
 <div class="cv-grid">
-  <div class="cv-when">Feb. 2020</div>
+  <div class="cv-when">Feb. 2025</div>
   <div class="cv-item">
-    <span class="cv-org">Best Dreamer Award</span><br>
-    <span class="cv-note">HS Valedictorian</span>
+    <span class="cv-org">Honor Prize</span><br>
+    <span class="cv-note">In the 31st Samsung Humantech Paper Contest (Co-recipient: Hanju Yoo)</span>
+  </div>
+  
+  <div class="cv-when">Mar. 2022</div>
+  <div class="cv-item">
+    <span class="cv-org">Full Scholarship for Undergraduate</span><br>
+    <span class="cv-note">Issued by Kwanjeong Educational Foundation</span>
   </div>
 
   <div class="cv-when">Aug. 2021</div>
@@ -136,24 +147,27 @@ permalink: /
     <span class="cv-note">&lt;1% in college of engineering</span>
   </div>
 
-  <div class="cv-when">Mar. 2022</div>
+  <div class="cv-when">Feb. 2020</div>
   <div class="cv-item">
-    <span class="cv-org">Full Scholarship for Undergraduate</span><br>
-    <span class="cv-note">Issued by Kwanjeong Educational Foundation</span>
+    <span class="cv-org">Best Dreamer Award</span><br>
+    <span class="cv-note">HS Valedictorian</span>
   </div>
 
-  <div class="cv-when">Feb. 2025</div>
-  <div class="cv-item">
-    <span class="cv-org">Honor Prize</span><br>
-    <span class="cv-note">In the 31st Samsung Humantech Paper Contest</span>
-  </div>
 </div>
 
 <div class="cv-section-title">Experiences</div>
 <div class="cv-grid">
-  <div class="cv-when">Mar. 2022&nbsp;&mdash;&nbsp;Present</div>
+  <div class="cv-when">Dec. 2024&nbsp;&mdash;&nbsp;Jan. 2025</div>
   <div class="cv-item">
-    <span class="cv-org">Teaching Assistant</span>, <br>Computational Thinking and SW Programming, Yonsei University<br>
+    <span class="cv-org">Visiting Researcher</span>, <br> 
+    Singapore University of Technology and Design (SUTD), Singapore<br>
+    <span class="cv-note">Hosted by Prof. Jihong Park. Conducted collaborative research on semantic communications.</span>
+  </div>
+
+  <div class="cv-when">2022&nbsp;&mdash;&nbsp;2025</div>
+  <div class="cv-item">
+    <span class="cv-org">Teaching Assistant</span>, 
+    <br> Computational Thinking and SW Programming, Yonsei University<br>
     Engineering Information Processing, Yonsei University<br>
     Understanding the World with Data, Yonsei University<br>
     <span class="cv-note">Led weekly 4-hour Python, C, SQL lectures and prepared course materials and exams.</span>

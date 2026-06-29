@@ -1,0 +1,16 @@
+- label: GitHub
+  icon: fab fa-github
+  url: https://github.com/wintersummer01
+
+- label: Email
+  icon: fas fa-envelope
+  url: mailto:elijah1030@yonsei.ac.kr
+  noblank: true
+
+- label: LinkedIn
+  icon: fab fa-linkedin
+  url: https://www.linkedin.com/in/dongha-choi-5476171a6/
+
+- label: Google Scholar
+  icon: fas fa-graduation-cap
+  url: https://scholar.google.com/citations?user=iwfL3-gAAAAJ&hl=ko&oi=sra
