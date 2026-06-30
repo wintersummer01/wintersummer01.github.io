@@ -96,7 +96,8 @@ permalink: /
       <span class="cv-org">Yonsei University</span>
       <span>Seoul, Korea</span>
     </div>
-    B.E. Integrated Technology <span class="cv-note">(GPA: 4.14/4.50)</span>
+    <!-- B.E. Integrated Technology <span class="cv-note">(GPA: 4.14/4.50, Early grad.)</span> -->
+    B.E. Integrated Technology <span class="cv-note">(Early Graduation)</span>
   </div>
 </div>
 
@@ -105,11 +106,11 @@ permalink: /
   <div class="cv-when">Dec 2025</div>
   <div class="cv-item">
     Exhibitor, <span class="cv-org">IEEE GLOBECOM 2025 (Taipei, Taiwan)</span><br>
-    <span class="cv-note">Demonstrated “Secure Semantic Communications via Steganography”.
+    <span class="cv-note">Demonstrated “Secure Semantic Communications via Steganography”.&nbsp;</span>
     <a href="https://www.aitimes.kr/news/articleView.html?idxno=37696"
         target='_blank'>
-        NEWS
-    </a></span>
+        News
+    </a>
   </div>
   <div class="cv-when">Jun. 2025</div>
   <div class="cv-item">
@@ -119,11 +120,11 @@ permalink: /
   <div class="cv-when">May 2025</div>
   <div class="cv-item">
     Exhibitor, <span class="cv-org">IEEE 6G Summit Dresden 2025 (Dresden, Germany)</span><br>
-    <span class="cv-note">Demonstrated “Wireless 6G systems: Real-Time Semantic Communications with Transparent AR Glasses”.
+    <span class="cv-note">Demonstrated “Wireless 6G systems: Real-Time Semantic Communications with Transparent AR Glasses”.&nbsp;</span>
     <a href="https://www.hani.co.kr/arti/economy/biznews/1198965.html"
         target='_blank'>
-        NEWS
-    </a></span>
+        News
+    </a>
   </div>
 </div>
 
@@ -176,16 +177,28 @@ permalink: /
 
 <div class="cv-section-title">Projects</div>
 <div class="cv-grid">
-  <div class="cv-when">2018&nbsp;&mdash;&nbsp;2019</div>
+  <div class="cv-when">2022&nbsp;&mdash;&nbsp;2023</div>
   <div class="cv-item">
-    <span class="cv-org">Calculator for Calculus</span><br>
-    <span class="cv-note">A mobile calculus calculation application for Android with 1.5k+ downloads</span>
+    <span class="cv-org">Entanglement</span><br>
+    <span class="cv-note">Exhibition at Ulsan Art Museum&nbsp;</span>
+    <a href="https://www.ulsan.go.kr/s/uam/bbs/view.ulsan?bbsId=BBS_0000000000000174&mId=001003001000000000&dataId=37662"
+        target='_blank'>
+        Link
+    </a>&nbsp;
+    <a href="https://www.youtube.com/watch?v=o6Siyi8qW_8"
+        target='_blank'>
+        Video
+    </a>
   </div>
-
   <div class="cv-when">2022&nbsp;&mdash;&nbsp;2023</div>
   <div class="cv-item">
     <span class="cv-org">EKG meets AI: Predicting H<sub>2</sub>FPEF using deep learning</span><br>
     <span class="cv-note">With 2022 Integrated Medical Science Research Program, Severance, Yonsei University</span>
+  </div>
+  <div class="cv-when">2018&nbsp;&mdash;&nbsp;2019</div>
+  <div class="cv-item">
+    <span class="cv-org">Calculator for Calculus</span><br>
+    <span class="cv-note">A mobile calculus calculation application for Android with 1.5k+ downloads</span>
   </div>
 </div>
 
