@@ -1,14 +1,29 @@
-- citation: '<strong>D. Choi</strong>, H. Yoo, K. Lee, D. Kim, and C.-B. Chae, "Explainable Semantic Communications: Neural Encoder Interpretation and Prototype Validation," submitted to <em>IEEE Communications Magazine</em>.'
+- citation: '<u><strong>Dongha Choi</strong></u>, Jungwoo Kim, Hyeonjin Lee, Yoonjung Lee, Jong-Seok Lee, and Chan-Byoung Chae, “Multimodal Semantic Communications for Physical AI: Shared Context Learning and Prototype Validation,” <em>to be submitted</em>.'
+  details: /projects/multimodal-semantic-communication-for-physical-ai/
+
+- citation: '<u><strong>Dongha Choi</strong></u>, Hanju Yoo, Kyungpil Lee, Dongwook Kim, and Chan-Byoung Chae, “Explainable Semantic Communications: Neural Encoder Interpretation and Prototype Validation,” under major revision for an <em>IEEE Communications Magazine</em> special issue.'
   selected: true
+  details: /projects/semantic-communication-functional-interpretation/
 
-- citation: 'H. Yoo, <strong>D. Choi</strong>, S. Kim, and C.-B. Chae, “Back to the Bits: Parametric Symbol Compression for Semantic O-RAN Fronthaul,” <em>to be submitted</em>.'
+- citation: 'Hanju Yoo, <u><strong>Dongha Choi</strong></u>, Songkuk Kim, and Chan-Byoung Chae, “Back to the Bits: Parametric Symbol Compression for Semantic O-RAN Fronthaul,” <em>to be submitted</em>.'
 
-- citation: '<strong>D. Choi</strong>, H. Yoo, and C.-B. Chae, "Steganography Semantic Communications: Architectures and Prototype Validation," <em>to be submitted</em>.'
+- citation: '<u><strong>Dongha Choi</strong></u>, Hanju Yoo, and Chan-Byoung Chae, “Steganography Semantic Communications: Architectures and Prototype Validation,” <em>to be submitted</em>.'
+  details: /projects/secure-semantic-communication-via-steganography/
 
-- citation: 'H. Yoo, <strong>D. Choi</strong>, S. Kim, and C.-B. Chae, “Symbol Distributions in Semantic Communications: A Mutual Information–Codelength Trade-off,” to appear in <em>IEEE Transactions on Wireless Communications</em>.'
+- citation: 'Hanju Yoo, <u><strong>Dongha Choi</strong></u>, Songkuk Kim, Chan-Byoung Chae, and Robert W. Heath, Jr., “Symbol Distributions in Semantic Communications: A Source-Channel Equilibrium Perspective,” <em>IEEE Transactions on Communications</em>, vol. 74, pp. 13842–13855, 2026.'
   selected: true
+  details: /projects/semantic-communication-symbol-distribution-analysis/
+  bib: /assets/bib/symbol-distributions-semantic-communications.bib
+  paper: https://doi.org/10.1109/TCOMM.2026.3721631
+  github: https://github.com/kmsiapps/Symbol-Distributions-in-Semantic-Communications
 
-- citation: 'H. Yoo, <strong>D. Choi</strong>, Y. Kim, Y. Kim, S. Kim, C.-B. Chae, and R. W. Heath, Jr., “Bridging Neural Networks and Wireless Systems with MIMO-OFDM Semantic Communications,” <em>IEEE Wireless Communications</em>, vol. 32, no. 5, pp. 48–55, 2025.'
+- citation: 'Hanju Yoo, <u><strong>Dongha Choi</strong></u>, Yonghwi Kim, Yoontae Kim, Songkuk Kim, Chan-Byoung Chae, and Robert W. Heath, Jr., “Bridging Neural Networks and Wireless Systems with MIMO-OFDM Semantic Communications,” <em>IEEE Wireless Communications</em>, vol. 32, no. 5, pp. 48–55, 2025.'
   selected: true
+  details: /projects/python-mimo-ofdm-prototyping/
+  bib: /assets/bib/bridging-neural-wireless-mimo-ofdm.bib
+  paper: https://doi.org/10.1109/MWC.001.2500040
+  github: https://github.com/kmsiapps/semantic-mimo-ofdm
 
-- citation: '<strong>D. Choi</strong> and C.-B. Chae, “A Study on the Transformer-based Equalizer in Semantic Communication Systems,” in <em>Proceedings of the Symposium of the Korean Institute of Communications and Information Sciences</em>, pp. 962–963, 2024.'
+- citation: '<u><strong>Dongha Choi</strong></u> and Chan-Byoung Chae, “A Study on the Transformer-based Equalizer in Semantic Communication Systems,” in <em>Proceedings of the Symposium of the Korean Institute of Communications and Information Sciences</em>, pp. 962–963, 2024.'
+  bib: /assets/bib/transformer-equalizer-semantic-communications.bib
+  paper: https://d2j16w31g89z0j.cloudfront.net/site/2024w/abs/0684-IVVHC.pdf

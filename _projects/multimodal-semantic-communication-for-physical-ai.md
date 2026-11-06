@@ -12,6 +12,10 @@ Built with **SK Telecom**, the prototype combines Unitree Go2 data collection wi
   <figcaption>Paired RGB and LiDAR observations from the real-world dataset.</figcaption>
 </figure>
 
-### Planned live demonstrations
+### Related Publication
 
-Live demonstrations are planned for [**6G Vision Fest 2026**](https://6gvf.org/home) and [**MWC 2027**](https://www.mwcbarcelona.com/).
+<u><strong>Dongha Choi</strong></u>, Jungwoo Kim, Hyeonjin Lee, Yoonjung Lee, Jong-Seok Lee, and Chan-Byoung Chae, “Multimodal Semantic Communications for Physical AI: Shared Context Learning and Prototype Validation,” *to be submitted*.
+
+### Related Demonstrations
+
+Will be demonstrated at [**6G Vision Fest 2026**](https://6gvf.org/home) and [**MWC 2027**](https://www.mwcbarcelona.com/).

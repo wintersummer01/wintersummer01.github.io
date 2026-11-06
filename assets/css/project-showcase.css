@@ -168,22 +168,35 @@
 .resource-links a {
   display: inline-flex;
   align-items: center;
-  min-height: 1.65rem;
-  padding: .18rem .55rem;
-  border: 1px solid var(--border-color);
-  border-radius: .35rem;
+  min-height: 2rem;
+  padding: .36rem .76rem;
+  border: 1px solid color-mix(in srgb, var(--link-color) 45%, var(--border-color));
+  border-radius: .55rem;
   color: var(--link-color);
+  background: rgba(128, 128, 128, .08);
+  background: color-mix(in srgb, var(--link-color) 9%, transparent);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .08);
   font-size: .75rem;
   font-style: normal;
   font-weight: 650;
   line-height: 1.2;
   text-decoration: none !important;
-  transition: border-color 140ms ease, background-color 140ms ease;
+  transition: filter 140ms ease, transform 140ms ease, box-shadow 140ms ease;
 }
 
 .resource-links a:hover {
-  border-color: var(--link-color);
-  background: rgba(128, 128, 128, .1);
+  color: var(--link-color);
+  background: color-mix(in srgb, var(--link-color) 15%, transparent);
+  transform: translateY(-1px);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, .12);
+}
+
+.resource-links a[target="_blank"]::after {
+  margin-left: .28rem;
+  font-size: .82em;
+  font-weight: 700;
+  line-height: 1;
+  content: "↗";
 }
 
 .projects-more {
@@ -349,8 +362,35 @@
 }
 
 .project-detail-description {
+  margin: .65rem 0 1.6rem;
+  padding-left: .75rem;
+  border-left: 2px solid var(--link-color);
+  color: var(--heading-color);
+  font-family: inherit;
+  font-size: 1.167rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: .005em;
+}
+
+.project-detail h2,
+.project-detail h3 {
+  margin: 2.15rem 0 .8rem;
+  padding: .55rem .75rem;
+  border-left: 4px solid var(--link-color);
+  border-radius: 0 .45rem .45rem 0;
+  color: var(--heading-color);
+  background: rgba(128, 128, 128, .11);
   font-size: 1.05rem;
-  line-height: 1.7;
+  font-weight: 750;
+  line-height: 1.35;
+  letter-spacing: .015em;
+}
+
+.project-detail h2 + p,
+.project-detail h3 + p {
+  margin-top: 0;
 }
 
 .project-gallery-image {
@@ -394,6 +434,14 @@
 
 .award-links {
   margin-top: 1rem;
+}
+
+.award-photo {
+  display: block;
+  width: min(100%, 620px);
+  margin: 1.25rem 0;
+  border: 1px solid var(--border-color);
+  border-radius: .8rem;
 }
 
 .demonstration-detail h1 {
@@ -466,6 +514,22 @@
 
   .project-card-image-stack--python-mimo-ofdm-prototyping .project-card-image--secondary {
     background-size: auto 140%;
+  }
+
+  .project-card-image-stack--semantic-communication-functional-interpretation .project-card-image--primary {
+    background-size: auto 78%;
+  }
+
+  .project-card-image-stack--semantic-communication-functional-interpretation .project-card-image--secondary {
+    background-size: auto 92%;
+  }
+
+  .project-card-link[href*="semantic-communication-symbol-distribution-analysis"] .project-card-image {
+    background-size: 145%;
+  }
+
+  .project-card-link[href*="ekg-meets-ai"] .project-card-image {
+    background-size: 155%;
   }
 
   .project-cards {

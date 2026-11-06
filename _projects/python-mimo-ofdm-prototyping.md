@@ -12,9 +12,9 @@ Using this stack, we prototyped semantic communication systems and identified pr
   <figcaption>Testbed interface.</figcaption>
 </figure>
 
-### Related publication
+### Related Publication
 
-H. Yoo, **D. Choi**, Y. Kim, Y. Kim, S. Kim, C.-B. Chae, and R. W. Heath, Jr., “Bridging Neural Networks and Wireless Systems with MIMO-OFDM Semantic Communications,” *IEEE Wireless Communications*, vol. 32, no. 5, pp. 48–55, 2025.
+Hanju Yoo, <u><strong>Dongha Choi</strong></u>, Yonghwi Kim, Yoontae Kim, Songkuk Kim, Chan-Byoung Chae, and Robert W. Heath, Jr., “Bridging Neural Networks and Wireless Systems with MIMO-OFDM Semantic Communications,” *IEEE Wireless Communications*, vol. 32, no. 5, pp. 48–55, 2025.
 
 <div class="resource-links">
   <a href="https://doi.org/10.1109/MWC.001.2500040" target="_blank" rel="noopener noreferrer">Paper</a>
@@ -22,9 +22,9 @@ H. Yoo, **D. Choi**, Y. Kim, Y. Kim, S. Kim, C.-B. Chae, and R. W. Heath, Jr., �
   <a href="https://github.com/kmsiapps/semantic-mimo-ofdm" target="_blank" rel="noopener noreferrer">GitHub</a>
 </div>
 
-### Related award
+### Related Award
 
-This work received the **Honor Prize** at the 31st Samsung Humantech Paper Award.
+This work contributed to **“Bridging Neural Networks and Wireless Systems: Theory and Prototypes for Semantic Communications,”** which received the Honor Prize at the 31st Samsung Humantech Paper Award.
 
 <div class="resource-links">
   <a href="{{ '/awards/samsung-humantech-2025/' | relative_url }}">Award Details</a>

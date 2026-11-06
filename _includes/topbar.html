@@ -37,11 +37,11 @@
       {% if page.url == '/' %}
         <span class="home-topbar-name">{{ site.title }}</span>
       {% elsif page.collection == 'projects' %}
-        Projects
+        <a class="topbar-section-link" href="{{ '/projects/' | relative_url }}">Projects</a>
       {% elsif page.collection == 'demonstrations' %}
-        Demonstrations
+        <a class="topbar-section-link" href="{{ '/#demonstrations' | relative_url }}">Demonstrations</a>
       {% elsif page.collection == 'awards' %}
-        Awards
+        <a class="topbar-section-link" href="{{ '/#awards' | relative_url }}">Awards</a>
       {% elsif page.layout == 'home' %}
         {{ site.data.locales[include.lang].title | default: site.title }}
       {% else %}

@@ -11,8 +11,8 @@ description: Secure Semantic Communications with Steganography, demonstrated at 
 **Presenters:** Dongha Choi, Hanju Yoo, and Chan-Byoung Chae
 
 <div class="resource-links demonstration-links">
+  <a href="{{ '/projects/secure-semantic-communication-via-steganography/' | relative_url }}">Details</a>
   <a href="https://globecom2025.ieee-globecom.org/" target="_blank" rel="noopener noreferrer">Conference</a>
-  <a href="{{ '/projects/secure-semantic-communication-via-steganography/' | relative_url }}">Project</a>
   <a href="https://www.aitimes.kr/news/articleView.html?idxno=37696" target="_blank" rel="noopener noreferrer">News</a>
 </div>
 

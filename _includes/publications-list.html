@@ -2,7 +2,17 @@
   {% assign shown = 0 %}
   {% for publication in site.data.publications %}
     {% if include.selected != true or publication.selected %}
-      <li class="publication-item">{{ publication.citation }}</li>
+      <li class="publication-item">
+        <div>{{ publication.citation }}</div>
+        {% if publication.details or publication.bib or publication.paper or publication.github %}
+          <div class="resource-links publication-links">
+            {% if publication.details %}<a href="{{ publication.details | relative_url }}">Details</a>{% endif %}
+            {% if publication.bib %}<a href="{{ publication.bib | relative_url }}" download>BIB</a>{% endif %}
+            {% if publication.paper %}<a href="{{ publication.paper }}" target="_blank" rel="noopener noreferrer">Paper</a>{% endif %}
+            {% if publication.github %}<a href="{{ publication.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>{% endif %}
+          </div>
+        {% endif %}
+      </li>
       {% assign shown = shown | plus: 1 %}
       {% if include.limit and shown >= include.limit %}{% break %}{% endif %}
     {% endif %}

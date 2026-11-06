@@ -12,6 +12,12 @@ The full Python prototype runs over USRP radios. A masking module separates the 
   <figcaption>Reconstruction quality on the Kodak image set.</figcaption>
 </figure>
 
+### Related Publication
+
+<u><strong>Dongha Choi</strong></u>, Hanju Yoo, and Chan-Byoung Chae, “Steganography Semantic Communications: Architectures and Prototype Validation,” *to be submitted*.
+
+### Related Demonstrations
+
 This system was demonstrated live at **IEEE GLOBECOM 2025**, held December 8–12, 2025, in Taipei, Taiwan.
 
 <div class="resource-links">
