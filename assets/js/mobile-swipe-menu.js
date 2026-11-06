@@ -24,6 +24,18 @@
     document.body.classList.toggle('sidebar-display');
   };
 
+  const closeSidebar = () => {
+    if (!isOpen()) return;
+
+    const trigger = document.getElementById('sidebar-trigger');
+    if (trigger) trigger.click();
+
+    // Keep closing deterministic even if the theme misses a synthetic click.
+    requestAnimationFrame(() => {
+      document.body.classList.remove('sidebar-display');
+    });
+  };
+
   document.addEventListener(
     'touchstart',
     (event) => {
@@ -39,8 +51,7 @@
       } else if (isOpen() && sidebar?.contains(event.target)) {
         gesture = 'close';
       } else {
-        gesture = null;
-        return;
+        gesture = 'outside';
       }
 
       startX = touch.clientX;
@@ -59,6 +70,14 @@
       const deltaX = touch.clientX - startX;
       const deltaY = touch.clientY - startY;
       const isHorizontal = Math.abs(deltaX) > Math.abs(deltaY) * 1.25;
+      const isTap = Math.abs(deltaX) < 12 && Math.abs(deltaY) < 12;
+
+      if (gesture === 'outside' && isTap) {
+        closeSidebar();
+        tracking = false;
+        gesture = null;
+        return;
+      }
 
       if (
         isHorizontal &&
@@ -66,7 +85,11 @@
           (gesture === 'close' && deltaX <= -SWIPE_DISTANCE))
       ) {
         if (gesture === 'open') openedAt = performance.now();
-        toggleSidebar();
+        if (gesture === 'close') {
+          closeSidebar();
+        } else {
+          toggleSidebar();
+        }
       }
 
       tracking = false;
@@ -86,12 +109,12 @@
       const clickedTrigger = trigger?.contains(event.target);
 
       // A touch swipe can emit a synthetic click immediately afterwards.
-      if (performance.now() - openedAt < 500) return;
+      if (performance.now() - openedAt < 350) return;
 
       if (!clickedInsideMenu && !clickedTrigger) {
         event.preventDefault();
         event.stopPropagation();
-        toggleSidebar();
+        closeSidebar();
       }
     },
     true
