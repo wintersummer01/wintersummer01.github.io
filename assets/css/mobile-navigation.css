@@ -1,0 +1,20 @@
+@media (max-width: 849px) {
+  #topbar-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transform: translateY(0);
+    transition: transform 180ms ease;
+    will-change: transform;
+  }
+
+  body.mobile-topbar-hidden #topbar-wrapper {
+    transform: translateY(-100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #topbar-wrapper {
+    transition: none;
+  }
+}

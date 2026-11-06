@@ -7,6 +7,8 @@
   let tracking = false;
   let gesture = null;
   let openedAt = 0;
+  let lastScrollY = window.scrollY;
+  let scrollTicking = false;
 
   const isMobile = () => window.innerWidth <= MOBILE_MAX_WIDTH;
   const isOpen = () => document.body.classList.contains('sidebar-display');
@@ -100,6 +102,29 @@
     () => {
       tracking = false;
       gesture = null;
+    },
+    { passive: true }
+  );
+
+  window.addEventListener(
+    'scroll',
+    () => {
+      if (!isMobile() || scrollTicking) return;
+
+      scrollTicking = true;
+      requestAnimationFrame(() => {
+        const currentScrollY = Math.max(window.scrollY, 0);
+        const delta = currentScrollY - lastScrollY;
+
+        if (currentScrollY <= 16 || delta <= -4) {
+          document.body.classList.remove('mobile-topbar-hidden');
+        } else if (delta >= 12 && !isOpen()) {
+          document.body.classList.add('mobile-topbar-hidden');
+        }
+
+        lastScrollY = currentScrollY;
+        scrollTicking = false;
+      });
     },
     { passive: true }
   );
