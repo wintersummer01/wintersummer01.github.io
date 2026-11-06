@@ -53,6 +53,57 @@ permalink: /
 /* 임의로 줄바꿈 막고 싶을 때 쓰는 유틸 */
 .nowrap { white-space: nowrap; }
 
+.mobile-profile {
+  display: grid;
+  grid-template-columns: 120px minmax(0, 1fr);
+  gap: 1rem;
+  align-items: center;
+  margin: -1rem 0 1.1rem;
+  padding: .85rem;
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  background: var(--card-bg, var(--main-bg));
+}
+
+.mobile-profile-photo {
+  width: 120px;
+  height: 120px;
+  margin: 0;
+  object-fit: cover;
+  border: 2px solid var(--border-color);
+  border-radius: 50%;
+}
+
+.mobile-profile-name {
+  margin: 0 0 .15rem;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.mobile-profile-role,
+.mobile-profile-focus {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.mobile-profile-role {
+  font-size: .98rem;
+}
+
+.mobile-profile-focus {
+  margin-top: .2rem;
+  color: var(--text-muted);
+  font-size: .9rem;
+}
+
+.mobile-profile-summary {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: var(--text-muted);
+  font-size: .93rem;
+  line-height: 1.55;
+}
+
 /* Mobile: stack dates above their content instead of squeezing both columns. */
 @media (max-width: 768px) {
   .page .page-content {
@@ -64,6 +115,50 @@ permalink: /
   .cv-section-title {
     margin-top: 2rem;
     font-size: 1.35rem;
+  }
+
+  .mobile-profile {
+    display: grid;
+    grid-template-columns: 120px minmax(0, 1fr);
+    gap: 1rem;
+    align-items: center;
+    margin: -1.35rem 0 1.1rem;
+    padding: .85rem;
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    background: var(--card-bg, var(--main-bg));
+  }
+
+  .mobile-profile-photo {
+    width: 120px;
+    height: 120px;
+    margin: 0;
+    object-fit: cover;
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+  }
+
+  .mobile-profile-name {
+    margin: 0 0 .15rem;
+    font-size: 1.35rem;
+    line-height: 1.2;
+  }
+
+  .mobile-profile-role {
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  .mobile-profile-role {
+    font-size: .9rem;
+  }
+
+  .mobile-profile-summary {
+    grid-column: 1 / -1;
+    margin: 0;
+    color: var(--text-muted);
+    font-size: .86rem;
+    line-height: 1.55;
   }
 
   .cv-grid {
@@ -98,32 +193,25 @@ permalink: /
 }
 </style>
 
-<!-- HEADER 
-<div style="text-align:center; margin-bottom: 1.2rem;">
-  <h1 style="margin:0;">Dongha Choi</h1>
-  <div>School of Integrated Technology, Yonsei University</div>
-  <a href="mailto:elijah1030@yonsei.ac.kr">elijah1030@yonsei.ac.kr</a>
-</div> -->
+<section class="mobile-profile" aria-label="Profile">
+  <img class="mobile-profile-photo" src="{{ '/assets/img/me.jpg' | relative_url }}" alt="Dongha Choi">
+  <div>
+    <h2 class="mobile-profile-name">Dongha Choi</h2>
+    <p class="mobile-profile-role">Ph.D. Candidate at Yonsei University</p>
+    <p class="mobile-profile-focus"><a href="https://cbchae.yonsei.ac.kr" target="_blank" rel="noopener noreferrer">Intelligence Networking Lab.</a></p>
+  </div>
+  <p class="mobile-profile-summary">My research interests include <strong>AI-RAN</strong>, <strong>semantic communications</strong>, and <strong>real-world wireless prototyping</strong>, and I also love solving problems across social domains through practical technological solutions.</p>
+</section>
 
-<div class="cv-section-title">Summary</div>
-<p>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am a Ph.D. student researching for <strong>AI-based communications</strong> and
-<strong>information theory for deep learning</strong> at the Intelligence Networking Lab., Yonsei University, Korea. Before joining the lab, I earned a B.E. from the School of Integrated Technology at Yonsei University with early graduation. My research interest includes <strong>semantic communications</strong>, <strong>learned image compression</strong>, and <strong>neural network architectures</strong>.
-<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I have served as a teaching assistant over two years and have three years of student council experience including the president of School of Integrated Technology and the chief executive committee member of College of Engineering. I also love to solve problems from various fields including social issues and medical challenges, via designing technological solutions.
-</p>
+<div class="cv-section-title" id="projects">Selected Projects</div>
+{% include project-cards.html limit=3 %}
+<p class="projects-more"><a href="{{ '/projects/' | relative_url }}">View all projects <i class="fas fa-arrow-right" aria-hidden="true"></i></a></p>
 
-<div class="cv-section-title">Publications</div>
-<ol>
-  <li><strong>D. Choi</strong>, H. Yoo, K. Lee, D. Kim, and C.-B. Chae, "Explainable Semantic Communications: Neural Encoder Interpretation and Prototype Validation," submitted to <em>IEEE Communications Magazine</em>.</li>
-  <li>H. Yoo, <strong>D. Choi</strong>, S. Kim, and C.-B. Chae, “Back to the Bits: Parametric Symbol Compression for Semantic O-RAN Fronthaul,” <em>to be submitted</em>.</li>
-  <li><strong>D. Choi</strong>, H. Yoo, and C.-B. Chae, "Steganography Semantic Communications: Architectures and Prototype Validation," <em>to be submitted</em>.</li>
-  <li>H. Yoo, <strong>D. Choi</strong>, S. Kim, and C.-B. Chae, “Symbol Distributions in Semantic Communications: A Mutual Information–Codelength Trade-off,” to appear in <em>IEEE Trans. on Wireless Communications</em>.</li>
-  <li>H. Yoo, <strong>D. Choi</strong>, Y. Kim, Y. Kim, S. Kim, and C.-B. Chae, "Bridging neural networks and wireless systems with MIMO-OFDM semantic communications," IEEE Wireless Communications 32.5 (2025): 48-55.</li>
-  <li><strong>D. Choi</strong>, and C.-B. Chae, “A Study on the Transformer-based Equalizer in Semantic Communication Systems,” in Proceedings of Symposium of the Korean Institute of communications and Information Sciences, 2024, pp. 962–963.</li>
-</ol>
+<div class="cv-section-title" id="publications">Selected Publications</div>
+{% include publications-list.html selected=true limit=3 %}
+<p class="projects-more"><a href="{{ '/publications/' | relative_url }}">View all publications <i class="fas fa-arrow-right" aria-hidden="true"></i></a></p>
 
-<div class="cv-section-title">Education</div>
+<div class="cv-section-title" id="education">Education</div>
 <div class="cv-grid">
   <div class="cv-when nowrap">2023&nbsp;&mdash;&nbsp;Present</div>
   <div class="cv-item">
@@ -145,16 +233,16 @@ permalink: /
   </div>
 </div>
 
-<div class="cv-section-title">System Demonstrations</div>
+<div class="cv-section-title" id="demonstrations">System Demonstrations</div>
 <div class="cv-grid">
-  <div class="cv-when">Dec 2025</div>
+  <div class="cv-when">Dec. 8&ndash;12, 2025</div>
   <div class="cv-item">
     Exhibitor, <span class="cv-org">IEEE GLOBECOM 2025 (Taipei, Taiwan)</span><br>
-    <span class="cv-note">Demonstrated “Secure Semantic Communications via Steganography”.&nbsp;</span>
-    <a href="https://www.aitimes.kr/news/articleView.html?idxno=37696"
-        target='_blank'>
-        News
-    </a>
+    <span class="cv-note">Demonstrated “Secure Semantic Communications with Steganography”.</span>
+    <div class="resource-links">
+      <a href="{{ '/demonstrations/ieee-globecom-2025/' | relative_url }}">Details</a>
+      <a href="https://www.aitimes.kr/news/articleView.html?idxno=37696" target="_blank" rel="noopener noreferrer">News</a>
+    </div>
   </div>
   <div class="cv-when">Jun. 2025</div>
   <div class="cv-item">
@@ -164,20 +252,22 @@ permalink: /
   <div class="cv-when">May 2025</div>
   <div class="cv-item">
     Exhibitor, <span class="cv-org">IEEE 6G Summit Dresden 2025 (Dresden, Germany)</span><br>
-    <span class="cv-note">Demonstrated “Wireless 6G systems: Real-Time Semantic Communications with Transparent AR Glasses”.&nbsp;</span>
-    <a href="https://www.hani.co.kr/arti/economy/biznews/1198965.html"
-        target='_blank'>
-        News
-    </a>
+    <span class="cv-note">Demonstrated “Wireless 6G systems: Real-Time Semantic Communications with Transparent AR Glasses”.</span>
+    <div class="resource-links">
+      <a href="https://www.hani.co.kr/arti/economy/biznews/1198965.html" target="_blank" rel="noopener noreferrer">News</a>
+    </div>
   </div>
 </div>
 
-<div class="cv-section-title">Awards and Honors</div>
+<div class="cv-section-title" id="awards">Awards and Honors</div>
 <div class="cv-grid">
   <div class="cv-when">Feb. 2025</div>
   <div class="cv-item">
     <span class="cv-org">Honor Prize</span><br>
     <span class="cv-note">In the 31st Samsung Humantech Paper Contest (Co-recipient: Hanju Yoo)</span>
+    <div class="resource-links">
+      <a href="{{ '/awards/samsung-humantech-2025/' | relative_url }}">Details</a>
+    </div>
   </div>
   
   <div class="cv-when">Mar. 2022</div>
@@ -200,7 +290,7 @@ permalink: /
 
 </div>
 
-<div class="cv-section-title">Experiences</div>
+<div class="cv-section-title" id="experiences">Experiences</div>
 <div class="cv-grid">
   <div class="cv-when">Dec. 2024&nbsp;&mdash;&nbsp;Jan. 2025</div>
   <div class="cv-item">
@@ -219,35 +309,16 @@ permalink: /
   </div>
 </div>
 
-<div class="cv-section-title">Projects</div>
+<div class="cv-section-title" id="professional-service">Professional Service</div>
 <div class="cv-grid">
-  <div class="cv-when">2022&nbsp;&mdash;&nbsp;2023</div>
+  <div class="cv-when">2026&nbsp;&mdash;&nbsp;Present</div>
   <div class="cv-item">
-    <span class="cv-org">Entanglement</span><br>
-    <span class="cv-note">Exhibition at Ulsan Art Museum&nbsp;</span>
-    <a href="https://www.ulsan.go.kr/s/uam/bbs/view.ulsan?bbsId=BBS_0000000000000174&mId=001003001000000000&dataId=37662"
-        target='_blank'>
-        Link
-    </a>&nbsp;
-    <a href="https://www.youtube.com/watch?v=o6Siyi8qW_8"
-        target='_blank'>
-        Video
-    </a>
-  </div>
-  <div class="cv-when">2022&nbsp;&mdash;&nbsp;2023</div>
-  <div class="cv-item">
-    <span class="cv-org">EKG meets AI: Predicting H<sub>2</sub>FPEF using deep learning</span><br>
-    <span class="cv-note">With 2022 Integrated Medical Science Research Program, Severance, Yonsei University</span>
-  </div>
-  <div class="cv-when">2018&nbsp;&mdash;&nbsp;2019</div>
-  <div class="cv-item">
-    <span class="cv-org">Calculator for Calculus</span><br>
-    <span class="cv-note">A mobile calculus calculation application for Android with 1.5k+ downloads</span>
+    <span class="cv-org">Reviewer</span><br>
+    <span class="cv-note">IEEE Journal of Selected Topics in Signal Processing (1)</span>
   </div>
 </div>
 
-
-<div class="cv-section-title">Skills</div>
+<div class="cv-section-title" id="skills">Skills</div>
 <div class="cv-grid">
   <div class="cv-when"><strong>Languages</strong></div>
   <div class="cv-item">

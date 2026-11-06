@@ -1,0 +1,24 @@
+{% if page.url == '/' %}
+  <nav class="custom-panel-content" aria-label="On this page">
+    <h2 class="panel-heading">On this page</h2>
+    <ul>
+      <li><a href="#projects">Selected Projects</a></li>
+      <li><a href="#publications">Selected Publications</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#demonstrations">Demonstrations</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="#experiences">Experience</a></li>
+      <li><a href="#professional-service">Professional Service</a></li>
+      <li><a href="#skills">Skills</a></li>
+    </ul>
+  </nav>
+{% elsif page.url == '/projects/' %}
+  <nav class="custom-panel-content" aria-label="Projects on this page">
+    <h2 class="panel-heading">Projects</h2>
+    <ul>
+      {% for project in site.data.projects %}
+        <li><a href="{{ project.url | relative_url }}">{{ project.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+{% endif %}

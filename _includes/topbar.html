@@ -1,0 +1,63 @@
+<!-- The Top Bar -->
+
+<header id="topbar-wrapper" class="flex-shrink-0" aria-label="Top Bar">
+  <div id="topbar" class="d-flex align-items-center justify-content-between px-lg-3 h-100">
+    <nav id="breadcrumb" aria-label="Breadcrumb">
+      {% assign paths = page.url | split: '/' %}
+      {% if page.collection == 'projects' %}
+        <span><a href="{{ '/' | relative_url }}">Home</a></span>
+        <span><a href="{{ '/projects/' | relative_url }}">Projects</a></span>
+        <span>{{ page.title }}</span>
+      {% elsif page.collection == 'demonstrations' %}
+        <span><a href="{{ '/' | relative_url }}">Home</a></span>
+        <span><a href="{{ '/#demonstrations' | relative_url }}">Demonstrations</a></span>
+        <span>{{ page.title }}</span>
+      {% elsif page.collection == 'awards' %}
+        <span><a href="{{ '/' | relative_url }}">Home</a></span>
+        <span><a href="{{ '/#awards' | relative_url }}">Awards</a></span>
+        <span>{{ page.title }}</span>
+      {% elsif paths.size == 0 or page.layout == 'home' %}
+        <span>{{ site.data.locales[include.lang].tabs.home | capitalize }}</span>
+      {% else %}
+        {% for item in paths %}
+          {% if forloop.first %}
+            <span><a href="{{ '/' | relative_url }}">{{ site.data.locales[include.lang].tabs.home | capitalize }}</a></span>
+          {% elsif forloop.last %}
+            <span>{{ site.data.locales[include.lang].tabs[item] | default: page.title }}</span>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    </nav>
+
+    <button type="button" id="sidebar-trigger" class="btn btn-link" aria-label="Sidebar">
+      <i class="fas fa-bars fa-fw"></i>
+    </button>
+
+    <div id="topbar-title">
+      {% if page.url == '/' %}
+        <span class="home-topbar-name">{{ site.title }}</span>
+      {% elsif page.collection == 'projects' %}
+        Projects
+      {% elsif page.collection == 'demonstrations' %}
+        Demonstrations
+      {% elsif page.collection == 'awards' %}
+        Awards
+      {% elsif page.layout == 'home' %}
+        {{ site.data.locales[include.lang].title | default: site.title }}
+      {% else %}
+        {{ page.title | default: site.title }}
+      {% endif %}
+    </div>
+
+    <a href="{{ '/' | relative_url }}" id="home-trigger" class="btn btn-link" aria-label="Home" title="Home">
+      <i class="fas fa-house fa-fw"></i>
+    </a>
+
+    <!-- Retain hidden search hooks so the theme script remains error-free. -->
+    <button type="button" id="search-trigger" class="d-none" hidden aria-hidden="true"></button>
+    <search id="search" class="d-none" hidden>
+      <input id="search-input" type="search" tabindex="-1" aria-hidden="true">
+    </search>
+    <button type="button" id="search-cancel" class="d-none" hidden aria-hidden="true"></button>
+  </div>
+</header>

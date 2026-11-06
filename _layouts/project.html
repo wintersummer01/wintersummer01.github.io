@@ -1,0 +1,33 @@
+---
+layout: page
+---
+
+{% assign project = site.data.projects | where: "slug", page.slug | first %}
+
+<article class="project-detail">
+  <div class="project-detail-media">
+    {% if project.image %}
+      <img class="project-detail-image{% if project.detail_image_fit %} project-detail-image--{{ project.detail_image_fit }}{% endif %}" src="{{ project.image | relative_url }}" alt="{{ project.image_alt | default: project.title }}">
+    {% else %}
+      <div class="project-card-placeholder" role="img" aria-label="Image placeholder for {{ project.title }}">
+        <i class="far fa-image" aria-hidden="true"></i>
+        <span>Project image coming soon</span>
+      </div>
+    {% endif %}
+  </div>
+
+  {% if project.year %}<p class="project-detail-year">{{ project.year }}</p>{% endif %}
+  <h1>{{ project.title }}</h1>
+  <p class="project-detail-description">{{ project.description }}</p>
+
+  {% if project.links %}
+    <p class="project-card-links">
+      {% for link in project.links %}
+        <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.label }}</a>{% unless forloop.last %}<span aria-hidden="true"> · </span>{% endunless %}
+      {% endfor %}
+    </p>
+  {% endif %}
+
+  {{ content }}
+  {% if content == empty %}<p class="project-detail-coming-soon">More details will be added soon.</p>{% endif %}
+</article>

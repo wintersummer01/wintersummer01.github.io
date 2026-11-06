@@ -1,0 +1,70 @@
+- title: Multimodal Semantic Communication Systems for Physical AI
+  slug: multimodal-semantic-communication-for-physical-ai
+  url: /projects/multimodal-semantic-communication-for-physical-ai/
+  year: 2026 — Present
+  description: AI-native wireless RGB–LiDAR transmission for physical AI, w/ SKT
+  image: /assets/img/projects/multimodal-semantic/architecture.png
+  image_alt: Architecture of the multimodal semantic communication system for physical AI
+  image_fit: zoom
+  detail_image_fit: contain
+  image_secondary: /assets/img/projects/multimodal-semantic/rgb-lidar-sample.png
+  image_secondary_alt: Paired RGB and LiDAR sample collected for the multimodal system
+
+- title: Secure Semantic Communication via Steganography
+  slug: secure-semantic-communication-via-steganography
+  url: /projects/secure-semantic-communication-via-steganography/
+  year: 2025 — Present
+  description: Deceiving eavesdroppers to discourage attack attempts in semantic communication systems
+  image: /assets/img/projects/secure-semantic/system-overview.png
+  image_alt: Over-the-air secure semantic communication system using steganography and USRP radios
+  image_fit: zoom
+  detail_image_fit: contain
+  image_secondary: /assets/img/projects/secure-semantic/kodak-psnr.png
+  image_secondary_alt: Kodak image reconstruction quality measured by PSNR
+
+- title: Real-world Prototyping with Python-based MIMO-OFDM Stack
+  slug: python-mimo-ofdm-prototyping
+  url: /projects/python-mimo-ofdm-prototyping/
+  year: 2024 — Present
+  description: Python-based modem design and real-world MIMO-OFDM prototyping with USRPs
+  image: /assets/img/projects/python-mimo-ofdm/testbed.png
+  image_alt: Python-based MIMO-OFDM testbed with neural encoders, USRPs, and power amplifiers
+  image_fit: zoom
+  detail_image_fit: contain
+  image_secondary: /assets/img/projects/python-mimo-ofdm/demo-interface.png
+  image_secondary_alt: Live testbed interface showing transmitted and reconstructed images
+
+- title: "Theory of Semantic Communications: Functional Interpretation of Neural Regions"
+  slug: semantic-communication-functional-interpretation
+  url: /projects/semantic-communication-functional-interpretation/
+  year: 2026 — Present
+  description: Project details and media will be added soon.
+
+- title: "Theory of Semantic Communications: Symbol Distribution Analysis"
+  slug: semantic-communication-symbol-distribution-analysis
+  url: /projects/semantic-communication-symbol-distribution-analysis/
+  year: 2024 — 2025
+  description: Project details and media will be added soon.
+
+- title: Entanglement
+  slug: entanglement
+  url: /projects/entanglement/
+  year: 2022 — 2023
+  description: Exhibition at Ulsan Art Museum.
+  links:
+    - label: Details
+      url: https://www.ulsan.go.kr/s/uam/bbs/view.ulsan?bbsId=BBS_0000000000000174&mId=001003001000000000&dataId=37662
+    - label: Video
+      url: https://www.youtube.com/watch?v=o6Siyi8qW_8
+
+- title: EKG Meets AI
+  slug: ekg-meets-ai
+  url: /projects/ekg-meets-ai/
+  year: 2022 — 2023
+  description: Predicting H₂FPEF using deep learning with the Integrated Medical Science Research Program at Severance, Yonsei University.
+
+- title: Calculator for Calculus
+  slug: calculator-for-calculus
+  url: /projects/calculator-for-calculus/
+  year: 2018 — 2019
+  description: A mobile calculus application for Android with more than 1,500 downloads.

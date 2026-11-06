@@ -1,0 +1,10 @@
+<ol class="publication-list">
+  {% assign shown = 0 %}
+  {% for publication in site.data.publications %}
+    {% if include.selected != true or publication.selected %}
+      <li class="publication-item">{{ publication.citation }}</li>
+      {% assign shown = shown | plus: 1 %}
+      {% if include.limit and shown >= include.limit %}{% break %}{% endif %}
+    {% endif %}
+  {% endfor %}
+</ol>
