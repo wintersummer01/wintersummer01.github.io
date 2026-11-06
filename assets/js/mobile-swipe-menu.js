@@ -80,16 +80,23 @@
       }
 
       if (
+        gesture !== 'open' &&
         isHorizontal &&
-        ((gesture === 'open' && deltaX >= SWIPE_DISTANCE) ||
-          (gesture === 'close' && deltaX <= -SWIPE_DISTANCE))
+        deltaX <= -SWIPE_DISTANCE
       ) {
-        if (gesture === 'open') openedAt = performance.now();
-        if (gesture === 'close') {
-          closeSidebar();
-        } else {
-          toggleSidebar();
-        }
+        closeSidebar();
+        tracking = false;
+        gesture = null;
+        return;
+      }
+
+      if (
+        isHorizontal &&
+        gesture === 'open' &&
+        deltaX >= SWIPE_DISTANCE
+      ) {
+        openedAt = performance.now();
+        toggleSidebar();
       }
 
       tracking = false;
