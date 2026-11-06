@@ -52,6 +52,50 @@ permalink: /
 
 /* 임의로 줄바꿈 막고 싶을 때 쓰는 유틸 */
 .nowrap { white-space: nowrap; }
+
+/* Mobile: stack dates above their content instead of squeezing both columns. */
+@media (max-width: 768px) {
+  .page .page-content {
+    max-width: 100%;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .cv-section-title {
+    margin-top: 2rem;
+    font-size: 1.35rem;
+  }
+
+  .cv-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: .25rem;
+  }
+
+  .cv-when {
+    margin-top: .85rem;
+    font-size: .9rem;
+    font-weight: 600;
+    white-space: normal;
+  }
+
+  .cv-item {
+    min-width: 0;
+    margin-bottom: .65rem;
+  }
+
+  .cv-right {
+    flex-wrap: wrap;
+    gap: .15rem .75rem;
+  }
+
+  .page-content ol {
+    padding-left: 1.35rem;
+  }
+
+  .page-content li + li {
+    margin-top: .65rem;
+  }
+}
 </style>
 
 <!-- HEADER 
