@@ -8,7 +8,7 @@ Physical AI robots send RGB images and LiDAR point clouds over wireless links. O
 Built with **SK Telecom**, the prototype combines Unitree Go2 data collection with a Python OFDM/SDR link for over-the-air testing.
 
 <figure class="project-gallery-image">
-  <img src="{{ '/assets/img/projects/multimodal-semantic/rgb-lidar-sample.png' | relative_url }}" alt="Paired RGB image and LiDAR point cloud collected in a real-world indoor environment">
+  <img src="{{ '/assets/img/projects/multimodal-semantic/rgb-lidar-sample.png' | relative_url }}" alt="Paired RGB image and LiDAR point cloud collected in a real-world indoor environment" loading="lazy" decoding="async">
   <figcaption>Paired RGB and LiDAR observations from the real-world dataset.</figcaption>
 </figure>
 

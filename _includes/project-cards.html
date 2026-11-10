@@ -1,16 +1,18 @@
 <div class="project-cards">
   {% for project in site.data.projects limit: include.limit %}
+    {% assign card_image = project.thumbnail | default: project.image %}
+    {% assign card_image_secondary = project.thumbnail_secondary | default: project.image_secondary %}
     <article class="project-card">
       <a class="project-card-link" href="{{ project.url | relative_url }}" aria-label="View {{ project.title }}">
         <div class="project-card-media">
-          {% if project.image %}
-            {% if project.image_secondary %}
+          {% if card_image %}
+            {% if card_image_secondary %}
               <div class="project-card-image-stack project-card-image-stack--{{ project.slug }}">
-                <div class="project-card-image project-card-image--primary{% if project.image_fit %} project-card-image--{{ project.image_fit }}{% endif %}" role="img" aria-label="{{ project.image_alt | default: project.title }}" style="background-image: url('{{ project.image | relative_url }}');"></div>
-                <div class="project-card-image project-card-image--secondary" role="img" aria-label="{{ project.image_secondary_alt | default: project.title }}" style="background-image: url('{{ project.image_secondary | relative_url }}');"></div>
+                <div class="project-card-image project-card-image--primary{% if project.image_fit %} project-card-image--{{ project.image_fit }}{% endif %}" role="img" aria-label="{{ project.image_alt | default: project.title }}" style="background-image: url('{{ card_image | relative_url }}');"></div>
+                <div class="project-card-image project-card-image--secondary" role="img" aria-label="{{ project.image_secondary_alt | default: project.title }}" style="background-image: url('{{ card_image_secondary | relative_url }}');"></div>
               </div>
             {% else %}
-              <div class="project-card-image{% if project.image_fit %} project-card-image--{{ project.image_fit }}{% endif %}" role="img" aria-label="{{ project.image_alt | default: project.title }}" style="background-image: url('{{ project.image | relative_url }}');"></div>
+              <div class="project-card-image{% if project.image_fit %} project-card-image--{{ project.image_fit }}{% endif %}" role="img" aria-label="{{ project.image_alt | default: project.title }}" style="background-image: url('{{ card_image | relative_url }}');"></div>
             {% endif %}
           {% else %}
             <div class="project-card-placeholder" role="img" aria-label="Image placeholder for {{ project.title }}">

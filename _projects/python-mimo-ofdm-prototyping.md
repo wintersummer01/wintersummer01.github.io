@@ -8,7 +8,7 @@ I designed a full Python-based 2×2 MIMO-OFDM modem and connected it to USRP rad
 Using this stack, we prototyped semantic communication systems and identified practical issues such as frequency-selective channels, noise variation, PA nonlinearity, and PAPR. These findings led to the publication below, received a HumanTech award, and continue to support our real-world wireless research.
 
 <figure class="project-gallery-image">
-  <img src="{{ '/assets/img/projects/python-mimo-ofdm/demo-interface.png' | relative_url }}" alt="Live Python interface showing source, transmitted, and reconstructed images with SNR and PSNR measurements">
+  <img src="{{ '/assets/img/projects/python-mimo-ofdm/demo-interface.png' | relative_url }}" alt="Live Python interface showing source, transmitted, and reconstructed images with SNR and PSNR measurements" loading="lazy" decoding="async">
   <figcaption>Testbed interface.</figcaption>
 </figure>
 

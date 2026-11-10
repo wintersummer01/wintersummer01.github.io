@@ -10,10 +10,10 @@ We analyze the encoder across network depth and identify layer-dependent special
 This interpretation enables selective fine-tuning. By updating only the encoder regions most relevant to channel adaptation, the over-the-air prototype improves reconstruction under channel mismatch without retraining the full model.
 
 <figure class="project-gallery-image">
-  <img src="{{ '/assets/img/projects/explainable-semantic/demo-setup.png' | relative_url }}" alt="Python OFDM and USRP prototype validating selective neural encoder adaptation over a real wireless channel">
+  <img src="{{ '/assets/img/projects/explainable-semantic/demo-setup.png' | relative_url }}" alt="Python OFDM and USRP prototype validating selective neural encoder adaptation over a real wireless channel" loading="lazy" decoding="async">
   <figcaption>Over-the-air prototype validation.</figcaption>
 </figure>
 
 ### Related Publication
 
-<u><strong>Dongha Choi</strong></u>, Hanju Yoo, Kyungpil Lee, Dongwook Kim, and Chan-Byoung Chae, “Explainable Semantic Communications: Neural Encoder Interpretation and Prototype Validation,” under major revision for an *IEEE Communications Magazine* special issue.
+<u><strong>Dongha Choi</strong></u>, Hanju Yoo, Kyungpil Lee, Dongwook Kim, and Chan-Byoung Chae, “Explainable Semantic Communications: Neural Encoder Interpretation and Prototype Validation,” under major revision for a special issue of *IEEE Communications Magazine*.

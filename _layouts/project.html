@@ -7,7 +7,7 @@ layout: page
 <article class="project-detail">
   <div class="project-detail-media">
     {% if project.image %}
-      <img class="project-detail-image{% if project.detail_image_fit %} project-detail-image--{{ project.detail_image_fit }}{% endif %}" src="{{ project.image | relative_url }}" alt="{{ project.image_alt | default: project.title }}">
+      <img class="project-detail-image{% if project.detail_image_fit %} project-detail-image--{{ project.detail_image_fit }}{% endif %}" src="{{ project.image | relative_url }}" alt="{{ project.image_alt | default: project.title }}" decoding="async">
     {% else %}
       <div class="project-card-placeholder" role="img" aria-label="Image placeholder for {{ project.title }}">
         <i class="far fa-image" aria-hidden="true"></i>

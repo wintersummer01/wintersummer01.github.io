@@ -1,6 +1,5 @@
 ---
-layout: page
-title: Dongha Choi
+layout: home
 permalink: /
 ---
 
@@ -201,6 +200,9 @@ permalink: /
     <p class="mobile-profile-focus"><a href="https://cbchae.yonsei.ac.kr" target="_blank" rel="noopener noreferrer">Intelligence Networking Lab.</a></p>
   </div>
   <p class="mobile-profile-summary">My research interests include <strong>AI-RAN</strong>, <strong>semantic communications</strong>, and <strong>real-world wireless prototyping</strong>, and I also love solving problems across social domains through practical technological solutions.</p>
+  <div class="resource-links mobile-profile-links">
+    <a href="{{ '/assets/pdf/Dongha_Choi_CV.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">CV</a>
+  </div>
 </section>
 
 <div class="cv-section-title" id="projects">Selected Projects</div>
@@ -219,7 +221,7 @@ permalink: /
       <span class="cv-org">Yonsei University</span>
       <span>Seoul, Korea</span>
     </div>
-    Ph.D. Student <span class="cv-note">(Advisor: Prof. Chan-Byoung Chae)</span>
+    Ph.D. Candidate <span class="cv-note">(Advisor: Prof. Chan-Byoung Chae)</span>
   </div>
 
   <div class="cv-when">2020&nbsp;&mdash;&nbsp;2022</div>
@@ -244,16 +246,20 @@ permalink: /
       <a href="https://www.aitimes.kr/news/articleView.html?idxno=37696" target="_blank" rel="noopener noreferrer">News</a>
     </div>
   </div>
-  <div class="cv-when">Jun. 2025</div>
+  <div class="cv-when">Jun. 15&ndash;20, 2025</div>
   <div class="cv-item">
     Exhibitor, <span class="cv-org">IEEE IMS 2025 (San Francisco, USA)</span><br>
-    <span class="cv-note">Demonstrated “Real-time video semantic communications with Python-based SDR”.</span>
+    <span class="cv-note">Demonstrated “Real-Time Semantic Communications with Transparent AR Glasses”.</span>
+    <div class="resource-links">
+      <a href="{{ '/demonstrations/ieee-ims-2025/' | relative_url }}">Details</a>
+    </div>
   </div>
-  <div class="cv-when">May 2025</div>
+  <div class="cv-when">May 14&ndash;15, 2025</div>
   <div class="cv-item">
     Exhibitor, <span class="cv-org">IEEE 6G Summit Dresden 2025 (Dresden, Germany)</span><br>
-    <span class="cv-note">Demonstrated “Wireless 6G systems: Real-Time Semantic Communications with Transparent AR Glasses”.</span>
+    <span class="cv-note">Demonstrated “Real-Time Semantic Communications with Transparent AR Glasses”.</span>
     <div class="resource-links">
+      <a href="{{ '/demonstrations/ieee-6g-summit-dresden-2025/' | relative_url }}">Details</a>
       <a href="https://www.hani.co.kr/arti/economy/biznews/1198965.html" target="_blank" rel="noopener noreferrer">News</a>
     </div>
   </div>
@@ -264,7 +270,7 @@ permalink: /
   <div class="cv-when">Feb. 2025</div>
   <div class="cv-item">
     <span class="cv-org">Honor Prize</span><br>
-    <span class="cv-note">In the 31st Samsung Humantech Paper Contest (Co-recipient: Hanju Yoo)</span>
+    <span class="cv-note">In the 31st Samsung Humantech Paper Award (Co-recipient: Hanju Yoo)</span>
     <div class="resource-links">
       <a href="{{ '/awards/samsung-humantech-2025/' | relative_url }}">Details</a>
     </div>
@@ -290,7 +296,7 @@ permalink: /
 
 </div>
 
-<div class="cv-section-title" id="experiences">Experiences</div>
+<div class="cv-section-title" id="experiences">Experience</div>
 <div class="cv-grid">
   <div class="cv-when">Dec. 2024&nbsp;&mdash;&nbsp;Jan. 2025</div>
   <div class="cv-item">
@@ -327,12 +333,12 @@ permalink: /
 
   <div class="cv-when"><strong>Foundational<br>Expertise in EECS</strong></div>
   <div class="cv-item">
-    Communications Theory, Information Theory, Machine Learning (Deep Learning and Reinforcement Learning), Data Management, Digital System Design, and Computer System Programing
+    Communications Theory, Information Theory, Machine Learning (Deep Learning and Reinforcement Learning), Data Management, Digital System Design, and Computer Systems Programming
   </div>
 
   <div class="cv-when"><strong>Programming</strong></div>
   <div class="cv-item">
-    Python, Tensorflow, PyTorch, Matlab, C (Fluent),<br>Javascript, HTML (Intermediate)
+    Python, TensorFlow, PyTorch, MATLAB, C (Fluent),<br>JavaScript, HTML (Intermediate)
   </div>
 </div>
 

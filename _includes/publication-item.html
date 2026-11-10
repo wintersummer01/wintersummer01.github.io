@@ -1,0 +1,20 @@
+{% assign publication = include.publication %}
+<li class="publication-item">
+  <div>{{ publication.citation }}</div>
+  {% if publication.details or publication.paper or publication.github or publication.bibtex %}
+    <div class="publication-actions">
+      <div class="resource-links publication-links">
+        {% if publication.bibtex %}<button type="button" class="publication-bib-toggle" aria-expanded="false">BIB</button>{% endif %}
+        {% if publication.details %}<a href="{{ publication.details | relative_url }}">Details</a>{% endif %}
+        {% if publication.paper %}<a href="{{ publication.paper }}" target="_blank" rel="noopener noreferrer">Paper</a>{% endif %}
+        {% if publication.github %}<a href="{{ publication.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>{% endif %}
+      </div>
+      {% if publication.bibtex %}
+        <div class="publication-bib-content" hidden>
+          <button type="button" class="publication-bib-copy">Copy</button>
+          <pre><code>{{ publication.bibtex | escape }}</code></pre>
+        </div>
+      {% endif %}
+    </div>
+  {% endif %}
+</li>

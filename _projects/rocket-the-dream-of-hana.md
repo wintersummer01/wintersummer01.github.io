@@ -13,16 +13,16 @@ It reached an altitude of **593.8 m** and was successfully recovered by parachut
 </div>
 
 <figure class="project-gallery-image">
-  <img src="{{ '/assets/img/projects/rocket-the-dream-of-hana/launch.png' | relative_url }}" alt="Project Rocket launch sequence">
+  <img src="{{ '/assets/img/projects/rocket-the-dream-of-hana/launch.png' | relative_url }}" alt="Project Rocket launch sequence" loading="lazy" decoding="async">
   <figcaption>Launch sequence.</figcaption>
 </figure>
 
 <figure class="project-gallery-image">
-  <img src="{{ '/assets/img/projects/rocket-the-dream-of-hana/flight-profile.png' | relative_url }}" alt="Project Rocket altitude profile showing a maximum altitude of 593.8 meters">
+  <img src="{{ '/assets/img/projects/rocket-the-dream-of-hana/flight-profile.png' | relative_url }}" alt="Project Rocket altitude profile showing a maximum altitude of 593.8 meters" loading="lazy" decoding="async">
   <figcaption>Measured flight profile.</figcaption>
 </figure>
 
 <figure class="project-gallery-image">
-  <img src="{{ '/assets/img/projects/rocket-the-dream-of-hana/rocket-assembly.png' | relative_url }}" alt="Project Rocket structure and recovery components">
+  <img src="{{ '/assets/img/projects/rocket-the-dream-of-hana/rocket-assembly.png' | relative_url }}" alt="Project Rocket structure and recovery components" loading="lazy" decoding="async">
   <figcaption>Rocket structure and recovery system.</figcaption>
 </figure>

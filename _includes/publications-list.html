@@ -1,20 +1,65 @@
-<ol class="publication-list">
-  {% assign shown = 0 %}
-  {% for publication in site.data.publications %}
-    {% if include.selected != true or publication.selected %}
-      <li class="publication-item">
-        <div>{{ publication.citation }}</div>
-        {% if publication.details or publication.bib or publication.paper or publication.github %}
-          <div class="resource-links publication-links">
-            {% if publication.details %}<a href="{{ publication.details | relative_url }}">Details</a>{% endif %}
-            {% if publication.bib %}<a href="{{ publication.bib | relative_url }}" download>BIB</a>{% endif %}
-            {% if publication.paper %}<a href="{{ publication.paper }}" target="_blank" rel="noopener noreferrer">Paper</a>{% endif %}
-            {% if publication.github %}<a href="{{ publication.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>{% endif %}
-          </div>
-        {% endif %}
-      </li>
-      {% assign shown = shown | plus: 1 %}
-      {% if include.limit and shown >= include.limit %}{% break %}{% endif %}
-    {% endif %}
-  {% endfor %}
-</ol>
+{% if include.selected == true %}
+  <ol class="publication-list">
+    {% assign shown = 0 %}
+    {% for publication in site.data.publications %}
+      {% if publication.selected %}
+        {% include publication-item.html publication=publication %}
+        {% assign shown = shown | plus: 1 %}
+        {% if include.limit and shown >= include.limit %}{% break %}{% endif %}
+      {% endif %}
+    {% endfor %}
+  </ol>
+{% else %}
+  <h2 class="publication-group-title">Manuscripts Under Review / In Preparation</h2>
+  <ol class="publication-list">
+    {% for publication in site.data.publications %}
+      {% if publication.status == 'manuscript' %}
+        {% include publication-item.html publication=publication %}
+      {% endif %}
+    {% endfor %}
+  </ol>
+
+  <h2 class="publication-group-title">Peer-Reviewed Publications</h2>
+  <ol class="publication-list">
+    {% for publication in site.data.publications %}
+      {% if publication.status == 'published' %}
+        {% include publication-item.html publication=publication %}
+      {% endif %}
+    {% endfor %}
+  </ol>
+{% endif %}
+
+<script>
+  document.querySelectorAll('.publication-bib-toggle').forEach(function (button) {
+    if (button.dataset.bound === 'true') return;
+    button.dataset.bound = 'true';
+    button.addEventListener('click', function () {
+      var panel = button.closest('.publication-actions').querySelector('.publication-bib-content');
+      var expanded = button.getAttribute('aria-expanded') === 'true';
+      button.setAttribute('aria-expanded', String(!expanded));
+      panel.hidden = expanded;
+    });
+  });
+
+  document.querySelectorAll('.publication-bib-copy').forEach(function (button) {
+    if (button.dataset.bound === 'true') return;
+    button.dataset.bound = 'true';
+    button.addEventListener('click', async function () {
+      var code = button.parentElement.querySelector('code').textContent;
+      try {
+        await navigator.clipboard.writeText(code);
+      } catch (error) {
+        var textarea = document.createElement('textarea');
+        textarea.value = code;
+        textarea.style.position = 'fixed';
+        textarea.style.opacity = '0';
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        textarea.remove();
+      }
+      button.textContent = 'Copied';
+      window.setTimeout(function () { button.textContent = 'Copy'; }, 1600);
+    });
+  });
+</script>

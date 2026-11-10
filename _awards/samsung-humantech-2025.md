@@ -11,7 +11,7 @@ The paper **“Bridging Neural Networks and Wireless Systems: Theory and Prototy
 
 **Recipients:** Dongha Choi and Hanju Yoo
 
-<img class="award-photo" src="{{ '/assets/img/awards/humantech-2025/award-ceremony.png' | relative_url }}" alt="Dongha Choi, Hanju Yoo, and Chan-Byoung Chae at the 31st Samsung Humantech Paper Award ceremony">
+<img class="award-photo" src="{{ '/assets/img/awards/humantech-2025/award-ceremony.png' | relative_url }}" alt="Dongha Choi, Hanju Yoo, and Chan-Byoung Chae at the 31st Samsung Humantech Paper Award ceremony" loading="lazy" decoding="async">
 
 <div class="resource-links award-links">
   <a href="{{ '/projects/python-mimo-ofdm-prototyping/' | relative_url }}">Prototype Details</a>

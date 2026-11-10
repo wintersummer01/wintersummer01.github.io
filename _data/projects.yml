@@ -2,24 +2,28 @@
   slug: multimodal-semantic-communication-for-physical-ai
   url: /projects/multimodal-semantic-communication-for-physical-ai/
   year: 2026 — Present
-  description: AI-native wireless RGB–LiDAR transmission for physical AI, w/ SKT
+  description: AI-native wireless RGB–LiDAR transmission for physical AI, in collaboration with SK Telecom
   image: /assets/img/projects/multimodal-semantic/architecture.png
+  thumbnail: /assets/img/projects/thumbnails/multimodal-semantic-architecture.jpg
   image_alt: Architecture of the multimodal semantic communication system for physical AI
   image_fit: zoom
   detail_image_fit: contain
   image_secondary: /assets/img/projects/multimodal-semantic/rgb-lidar-sample.png
+  thumbnail_secondary: /assets/img/projects/thumbnails/multimodal-semantic-rgb-lidar-sample.jpg
   image_secondary_alt: Paired RGB and LiDAR sample collected for the multimodal system
 
-- title: Secure Semantic Communication via Steganography
-  slug: secure-semantic-communication-via-steganography
-  url: /projects/secure-semantic-communication-via-steganography/
+- title: Secure Semantic Communications via Steganography
+  slug: secure-semantic-communications-via-steganography
+  url: /projects/secure-semantic-communications-via-steganography/
   year: 2025 — Present
   description: Deceiving eavesdroppers to discourage attack attempts in semantic communication systems
   image: /assets/img/projects/secure-semantic/system-overview.png
+  thumbnail: /assets/img/projects/thumbnails/secure-semantic-system-overview.jpg
   image_alt: Over-the-air secure semantic communication system using steganography and USRP radios
   image_fit: zoom
   detail_image_fit: contain
   image_secondary: /assets/img/projects/secure-semantic/kodak-psnr.png
+  thumbnail_secondary: /assets/img/projects/thumbnails/secure-semantic-kodak-psnr.jpg
   image_secondary_alt: Kodak image reconstruction quality measured by PSNR
 
 - title: Real-world Prototyping with Python-based MIMO-OFDM Stack
@@ -28,10 +32,12 @@
   year: 2024 — Present
   description: Python-based modem design and real-world MIMO-OFDM prototyping with USRPs
   image: /assets/img/projects/python-mimo-ofdm/testbed.png
+  thumbnail: /assets/img/projects/thumbnails/python-mimo-ofdm-testbed.jpg
   image_alt: Python-based MIMO-OFDM testbed with neural encoders, USRPs, and power amplifiers
   image_fit: zoom
   detail_image_fit: contain
   image_secondary: /assets/img/projects/python-mimo-ofdm/demo-interface.png
+  thumbnail_secondary: /assets/img/projects/thumbnails/python-mimo-ofdm-demo-interface.jpg
   image_secondary_alt: Live testbed interface showing transmitted and reconstructed images
 
 - title: "Theory of Semantic Communications: Functional Interpretation of Neural Regions"
@@ -40,10 +46,12 @@
   year: 2026 — Present
   description: Explaining semantic communications in the language of conventional communications
   image: /assets/img/projects/explainable-semantic/framework.png
+  thumbnail: /assets/img/projects/thumbnails/explainable-semantic-framework.jpg
   image_alt: Functional interpretation of conventional and neural semantic communication encoders
   image_fit: zoom
   detail_image_fit: contain
   image_secondary: /assets/img/projects/explainable-semantic/demo-setup.png
+  thumbnail_secondary: /assets/img/projects/thumbnails/explainable-semantic-demo-setup.jpg
   image_secondary_alt: Over-the-air prototype for selective neural encoder adaptation
 
 - title: "Theory of Semantic Communications: Symbol Distribution Analysis"
@@ -52,6 +60,7 @@
   year: 2024 — 2025
   description: Explaining learned symbol distributions through a source–channel equilibrium
   image: /assets/img/projects/symbol-distributions/source-channel-equilibrium.png
+  thumbnail: /assets/img/projects/thumbnails/symbol-distributions-source-channel-equilibrium.jpg
   image_alt: Source-channel equilibrium perspective on learned semantic symbol distributions
   image_fit: contain
   detail_image_fit: contain
@@ -62,6 +71,7 @@
   year: 2022 — 2023
   description: Technology-driven immersive art at the XR Lab, Ulsan Art Museum
   image: /assets/img/projects/entanglement/xr-lab-installation.png
+  thumbnail: /assets/img/projects/thumbnails/entanglement-xr-lab-installation.jpg
   image_alt: Entanglement immersive forest installation at the XR Lab, Ulsan Art Museum
   image_fit: cover
 
@@ -71,6 +81,7 @@
   year: 2022 — 2023
   description: Estimating the H₂FPEF score directly from ECG with deep learning
   image: /assets/img/projects/ekg-meets-ai/h2fpef-overview.png
+  thumbnail: /assets/img/projects/thumbnails/ekg-meets-ai-h2fpef-overview.jpg
   image_alt: Overview of heart failure with preserved ejection fraction and the H2FPEF clinical score
   image_fit: contain
   detail_image_fit: contain
@@ -81,6 +92,7 @@
   year: 2018 — 2019
   description: A KNSB-powered rocket reaching approximately 600 m
   image: /assets/img/projects/rocket-the-dream-of-hana/liftoff.png
+  thumbnail: /assets/img/projects/thumbnails/rocket-the-dream-of-hana-liftoff.jpg
   image_alt: Project Rocket lifting off from the launch field
   image_fit: cover
   detail_image_fit: contain
@@ -91,6 +103,7 @@
   year: 2018 — 2019
   description: An Android calculator for differentiating and integrating polynomial functions
   image: /assets/img/projects/calculator-for-calculus/google-play-listing.png
+  thumbnail: /assets/img/projects/thumbnails/calculator-for-calculus-google-play-listing.jpg
   image_alt: Calculator for Calculus listing on Google Play
   image_fit: cover
   detail_image_fit: contain
