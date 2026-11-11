@@ -10,21 +10,9 @@
     {% endfor %}
   </ol>
 {% else %}
-  <h2 class="publication-group-title">Manuscripts Under Review / In Preparation</h2>
   <ol class="publication-list">
     {% for publication in site.data.publications %}
-      {% if publication.status == 'manuscript' %}
-        {% include publication-item.html publication=publication %}
-      {% endif %}
-    {% endfor %}
-  </ol>
-
-  <h2 class="publication-group-title">Peer-Reviewed Publications</h2>
-  <ol class="publication-list">
-    {% for publication in site.data.publications %}
-      {% if publication.status == 'published' %}
-        {% include publication-item.html publication=publication %}
-      {% endif %}
+      {% include publication-item.html publication=publication %}
     {% endfor %}
   </ol>
 {% endif %}
