@@ -317,7 +317,7 @@ permalink: /
 
 <div class="cv-section-title" id="professional-service">Professional Service</div>
 <div class="cv-grid">
-  <div class="cv-when">2026&nbsp;&mdash;&nbsp;Present</div>
+  <div class="cv-when">Jul. 2026</div>
   <div class="cv-item">
     <span class="cv-org">Reviewer</span><br>
     <span class="cv-note">IEEE Journal of Selected Topics in Signal Processing (1)</span>
